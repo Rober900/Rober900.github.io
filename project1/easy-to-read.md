@@ -1,9 +1,3 @@
----
-layout: page
-title: "Easy-to-read: Dialogue format in micro stories"
-permalink: /project1
----
-
 # Easy-to-read: Dialogue Format in Micro-stories
 
 ## Project Overview
