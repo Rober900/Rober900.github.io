@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Easy-to-read: Dialogue format in micro stories"
-permalink: https://Rober900.github.io/project1
+permalink: /project1
 ---
 
 # Easy-to-read: Dialogue Format in Micro-stories
