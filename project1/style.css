@@ -1,0 +1,169 @@
+:root {
+    /* EDIT: You can easily change the site's colors here */
+    --background-color: #111111;
+    --text-color: #e0e0e0;
+    --subtle-text-color: #9d9d9d;
+    --primary-color: #ffffff;
+    --border-color: #333333;
+    --hover-color: #ffffff;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+a {
+    color: var(--subtle-text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--hover-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ==== HEADER & INTRODUCTION ==== */
+header {
+    padding: 120px 0 80px 0;
+    text-align: left;
+}
+
+header .name {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin: 0 0 16px 0;
+}
+
+header .intro {
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 0 24px 0;
+    line-height: 1.5;
+}
+
+.links {
+    display: flex;
+    gap: 24px;
+}
+
+.links a {
+    font-weight: 500;
+}
+
+/* ==== SECTION TITLES ==== */
+.section-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 12px;
+}
+
+/* ==== PROJECT GRID ==== */
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.project-card {
+    background-color: transparent;
+    border-radius: 8px;
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+.project-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin: 0 0 4px 0;
+}
+
+.project-card p {
+    font-size: 16px;
+    color: var(--subtle-text-color);
+    margin: 0;
+}
+
+/* ==== PLAYGROUND & FOOTER SECTIONS ==== */
+.playground, footer {
+    margin-top: 100px;
+}
+
+.playground-intro {
+    font-size: 18px;
+    max-width: 600px;
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+
+footer {
+    text-align: left;
+    padding: 40px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+footer p {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+/* ==== RESPONSIVE DESIGN FOR MOBILE ==== */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    header {
+        padding: 80px 0 60px 0;
+    }
+
+    header .name {
+        font-size: 24px;
+    }
+
+    header .intro {
+        font-size: 18px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
